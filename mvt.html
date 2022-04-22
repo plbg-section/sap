@@ -3,7 +3,7 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>SAP</title>
+      <title>SAP Movement Type</title>
       <link href="css/bootstrap.min.css" rel="stylesheet" />
       <style>
         .pointer {cursor: pointer;}
@@ -47,7 +47,7 @@
          $http.get('https://script.google.com/macros/s/AKfycby6PVSyYlt0j2jXnesPBHynHLDHsg2xd8TJa8pXJoTYmmMjmNRx/exec').then(
          function successCallback(res){
          
-         console.log(" line 208 data daily in ctrl_daily from appmodule =");
+         
          console.log(res.data);
          $scope.mvt=res.data.mvt;
          $scope.slocs=res.data.slocs;
@@ -56,7 +56,7 @@
          
          },
          function errorCallback(res){
-         console.log(" Unable to perform get request daily data");
+         console.log(" Unable to perform get request sloc data");
          }
          );
          });
@@ -112,7 +112,7 @@
               py-2
             "
           >
-          SAP Storage Location
+          SAP Movement Type
           </h3>
           <div class="card-body">
             <div
